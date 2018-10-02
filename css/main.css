@@ -2,23 +2,25 @@ html {
   font-family: Lora, serif;
 }
 
-.masthead {
-  background-color: #588477;
-  background-image: url("../www/images/leaf-bg.svg");
-  background-size: auto;
-  background-repeat: repeat;
-  border-top-style: solid;
-  border-bottom-style: solid;
-  border-top-color: #2d5a4d;
-  border-bottom-color: #2d5a4d;
+.banner {
+  color: #fff;
+  background-image: linear-gradient(to bottom, rgba(16, 52, 41, 0) 70%, rgba(16, 52, 41, .8) 100%), url("../images/banner.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+}
 
+.masthead {
+  background-image: url("../images/leaf-bg.svg");
+  background-color: #588477;
+  border-top: 3px solid #2d5a4d;
+  border-bottom: 3px solid #2d5a4d;
+  background-size: 50px auto;
+  background-repeat: repeat;
 }
 
 .logo {
   text-align: center;
-}
-
-h1 {
   color: #fff;
 }
 
@@ -27,35 +29,66 @@ h1 {
 }
 
 .nav a {
-  color: #fff;
-  background-color: #467366;
   text-decoration: none;
-  border-radius: 9px;
-  border-style: solid;
-  border-color: #2d5a4d;
+  color: #fff;
+  border: 3px solid #2d5a4d;
+  border-radius: 8px;
+  background-color: #467366;
 }
 
 .nav a:hover {
-
-}
-
-.banner {
-  background-image: url("../www/images/banner.jpg");
-  background-size: cover;;
-
+  background-color: #fff;
+  color: #145b1d;
+  background-image: url("../images/leaf-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50px auto;
 }
 
 .banner-content {
-  background-image: url("../www/images/two-leaves.svg");
+  padding-top: 180px;
+  background-size: 100px;
   background-repeat: no-repeat;
-  background-position: left top;
-  background-size: 64px;
-  padding-left: .75em;
-  color: #fff;
-  padding-top: 300px;
+}
+
+div p {
+  background: no-repeat url("../images/two-leaves.svg");
+  background-size: 100px;
+  padding-top: 4.7em;
+}
+
+.logo,
+.nav {
+  text-align: center;
+}
+
+@media only screen and (min-width: 38em) {
+
+  .logo,
+  .nav {
+    text-align: center;
+  }
+
+  .banner-content {
+    padding-top: 10em;
+  }
+
+  div p {
+    padding-top: 3em;
+  }
+
 }
 
 @media only screen and (min-width: 60em) {
+
+  .masthead {
+    text-align: left;
+    padding-bottom: .7em;
+  }
+
+  .banner-content {
+    padding-top: 9.6em;
+  }
 
   .logo {
     text-align: left;
@@ -63,6 +96,34 @@ h1 {
 
   .nav {
     text-align: right;
+  }
+
+  div p {
+    padding-top: 2.6em;
+  }
+
+}
+
+@media only screen and (min-width: 90em) {
+
+  .masthead {
+    text-align: left;
+  }
+
+  .banner-content {
+    padding-top: 8.9em;
+  }
+
+  .logo {
+    text-align: left;
+  }
+
+  .nav {
+    text-align: right;
+  }
+
+  div p {
+    padding-top: 2.3em;
   }
 
 }
